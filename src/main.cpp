@@ -85,7 +85,7 @@ int main(int argc, char** argv)
 
   ros::Publisher gpspub = nh.advertise<sensor_msgs::NavSatFix> ("/gps/data", 1);
   sensor_msgs::NavSatFix gpsdata;
-  gpsdata.header.frame_id = "ublox";
+  gpsdata.header.frame_id = "gps";
   gpsdata.status.status = 0;
   gpsdata.status.service = 1;
   gpsdata.position_covariance_type = 1;
