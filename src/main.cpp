@@ -202,7 +202,7 @@ HD: while (head1 != 1 && k < nRead) {
         gpsdata.altitude = heightAE;
 
         gpsdata.position_covariance[0] = horiAccu * horiAccu / 2;
-        gpsdata.position_covariance[3] = horiAccu * horiAccu / 2;
+        gpsdata.position_covariance[4] = horiAccu * horiAccu / 2;
         gpsdata.position_covariance[8] = vertAccu * vertAccu;
 
         gpspub.publish(gpsdata);
